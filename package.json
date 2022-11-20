@@ -1,7 +1,7 @@
 {
   "name": "yahoo-fantasy-cli",
-  "version": "1.0.0",
-  "description": "Manage your yahoo fantasy teams from the command line",
+  "version": "1.0.1",
+  "description": "Manage your yahoo fantasy team(s) and league(s) from the command line.",
   "exports": "./dist/cli.js",
   "repository": "git@github.com:kenjdavidson/yahoo-fantasy-cli.git",
   "author": "kendavidson <ken.j.davidson@live.ca>",
