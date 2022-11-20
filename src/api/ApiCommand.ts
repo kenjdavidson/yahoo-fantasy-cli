@@ -39,7 +39,10 @@ const ApiCommand = new Command('api')
   .option('-m, --method <string>', 'http method used for request', 'GET')
   .option('-p, --jsonpath <string>', 'jsonpath to run on output')
   .option('-i, --interactive', 'interactive input of jsonpath queries')
-  .argument('<uri>', 'the API uri')
+  .argument(
+    '<uri>',
+    'the API uri. Example: /fantasy/v2/users;use_login=1/games',
+  )
   .action(async (arg, options) => {
     try {
       const api = await YahooFantasyWrapper.load();
