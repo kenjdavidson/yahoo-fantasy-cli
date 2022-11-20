@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@types/inquirer": "^9.0.3",
+    "@types/jsonpath": "^0.2.0",
     "@types/node": "^18.11.9",
     "@typescript-eslint/eslint-plugin": "^5.43.0",
     "@typescript-eslint/parser": "^5.43.0",
@@ -32,6 +33,7 @@
     "chalk": "^5.1.2",
     "commander": "^9.4.1",
     "inquirer": "^9.1.4",
+    "jsonpath": "^1.1.1",
     "ora": "^6.1.2",
     "querystring": "^0.2.1",
     "yahoo-fantasy": "../yahoo-fantasy-sports-api"

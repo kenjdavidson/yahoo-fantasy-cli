@@ -83,7 +83,9 @@ export const error = (message: string, err?: any) => {
  */
 export const loading = async <T>(message: string, request: Promise<T>) => {
   const spinner = ora(message).start();
-  const value = await request;
-  spinner.stop();
-  return value;
+  try {
+    return await request;
+  } finally {
+    spinner.stop();
+  }
 };

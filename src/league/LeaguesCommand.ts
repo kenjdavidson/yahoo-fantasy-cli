@@ -8,11 +8,8 @@ const description = 'Yahoo! Fantasy Leagues';
 
 const displayUserLeagues = async (api: YahooFantasyWrapper) => {
   const leagues = await loading(
-    `Loading ${api.token?.userDetails?.name} leagues...`,
-    api.api(
-      'GET',
-      'https://fantasysports.yahooapis.com/fantasy/v2/users;use_login=1/games/leagues',
-    ),
+    `Loading ${api.token?.userDetails?.name}'s leagues...`,
+    api.api('GET', '/fantasy/v2/users;use_login=1/games;out=leagues'),
   );
 };
 
