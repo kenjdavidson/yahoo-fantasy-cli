@@ -4,10 +4,7 @@ import { trim, error } from '../utils.js';
 import OAuth2Config, { printConfig, writeConfig } from './OAuth2Config.js';
 
 const description = `Configure Yahoo! Fantasy CLI App`;
-const helpAfter =
-  trim(`Yahoo! OAuth2 applications can be created with the Yahoo! developer portal: https://developer.yahoo.com/apps/).  Once created
-you will need to configure the CLI with the: client id, client secret and redirect uri (although in this case it's most likely
-Out of Bound/Band).`);
+const helpAfter = `\nYahoo! OAuth2 applications can be created with the Yahoo! developer portal: https://developer.yahoo.com/apps/).`;
 
 const options: QuestionCollection<Answers> = [
   {

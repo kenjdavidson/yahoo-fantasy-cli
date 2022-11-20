@@ -4,7 +4,8 @@ import YahooFantasyWrapper from './YahooFantasyApi.js';
 import jp from 'jsonpath';
 import inquirer from 'inquirer';
 
-const afterHelp = `Interactive mode allows you to run repeated jsonpath queries against the data.
+const afterHelp = `
+Interactive mode allows you to run repeated jsonpath queries against the data.
 
 Examples:
 

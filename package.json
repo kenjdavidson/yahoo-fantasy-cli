@@ -7,6 +7,9 @@
   "author": "kendavidson <ken.j.davidson@live.ca>",
   "license": "MIT",
   "type": "module",
+  "bin": {
+    "yfs": "./dist/cli.js"
+  },
   "scripts": {
     "clean": "rimraf dist",
     "test": "jest",
@@ -24,6 +27,7 @@
     "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
     "jest": "^29.3.1",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.7.1",
     "typescript": "^4.9.3"
   },
@@ -37,5 +41,8 @@
     "ora": "^6.1.2",
     "querystring": "^0.2.1",
     "yahoo-fantasy": "../yahoo-fantasy-sports-api"
-  }
+  },
+  "files": [
+    "./dist/**/*"
+  ]
 }
