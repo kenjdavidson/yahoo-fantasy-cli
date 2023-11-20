@@ -15,7 +15,7 @@ interface TokenResponse {
   state?: string;
 }
 
-const description = `Login to Yahoo!`;
+const description = `login with Yahoo!`;
 const helpAfter = `\nPlease open the login page provided in a browser.  Once you've completed the login, you'll be provided a custom code.  This code will be used to authorize the CLI with your Yahoo! account.`;
 
 const options: QuestionCollection<Answers> = [

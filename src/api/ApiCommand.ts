@@ -5,7 +5,7 @@ import jp from 'jsonpath';
 import inquirer from 'inquirer';
 
 const afterHelp = `
-Interactive mode allows you to run repeated jsonpath queries against the data.
+Interactive mode allows you to run repeated jsonpath queries against the data.  For more information look at the guide https://developer.yahoo.com/fantasysports/guide/.
 
 Examples:
 
@@ -34,7 +34,7 @@ const displayJsonPath = (data: any, jsonpath: string) => {
 };
 
 const ApiCommand = new Command('api')
-  .description('Make direct requests against the API')
+  .description('send custom requests to the Yahoo! Fantasy API.')
   .addHelpText('after', afterHelp)
   .option('-m, --method <string>', 'http method used for request', 'GET')
   .option('-p, --jsonpath <string>', 'jsonpath to run on output')

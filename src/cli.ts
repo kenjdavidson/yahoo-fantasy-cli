@@ -2,7 +2,7 @@
 
 import { Command } from '@commander-js/extra-typings';
 import ApiCommand from './api/ApiCommand.js';
-import LeaguesCommand from './league/LeaguesCommand.js';
+import LeaguesCommand from './resource/LeaguesCommand.js';
 import ConfigCommand from './oauth2/ConfigCommand.js';
 import LoginCommand from './oauth2/LoginCommand.js';
 import { readFileSync } from 'fs';

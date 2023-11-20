@@ -12,7 +12,7 @@ Command line wrapper for [yahoo-fantasy-sports-api](https://github.com/whatadewi
 
 The following commands are available:
 
-### `config`
+### Config
 
 Configuration is done by placing your Yahoo! App `clientId`, `clientSecret` and `redirectUri` (which is most likely going to be `oob`) into the configuration file `~/.yahoo/config`.
 
@@ -29,7 +29,7 @@ Options:
 Yahoo! OAuth2 applications can be created with the Yahoo! developer portal: https://developer.yahoo.com/apps/).
 ```
 
-### `login`
+### Login
 
 One the Yahoo! app configuration is setup, you'll need to login. Logging in will store your token information to `~/.yahoo/token`. Tokens can be manually refreshed using the `-r` flag.
 
@@ -46,7 +46,7 @@ Options:
 
 > Currently there is no logging out, the `~/.yahoo/token` file can be removed manually
 
-### `api`
+### API
 
 Allows requesting custom data; then querying this data using `jsonpath`:
 

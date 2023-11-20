@@ -3,7 +3,7 @@ import inquirer, { Answers, QuestionCollection } from 'inquirer';
 import { trim, error } from '../utils.js';
 import OAuth2Config, { printConfig, writeConfig } from './OAuth2Config.js';
 
-const description = `Configure Yahoo! Fantasy CLI App`;
+const description = `configure Yahoo! OAuth App`;
 const helpAfter = `\nYahoo! OAuth2 applications can be created with the Yahoo! developer portal: https://developer.yahoo.com/apps/).`;
 
 const options: QuestionCollection<Answers> = [
